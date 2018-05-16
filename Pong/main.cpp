@@ -27,7 +27,7 @@ int main(int argc,char *argv[])
     ball->setPlayer(player1,player2);
     //add ball for check goal and getscore condition for redraw
     Ui->setBall(ball);
-    // attach all object to give update and draw for each object
+    //attach all object to give update and draw for each object
     OpenWindow::Instance()->attach(player1);
     OpenWindow::Instance()->attach(player2);
     OpenWindow::Instance()->attach(ball);

@@ -7,7 +7,7 @@ Ball::Ball()
     pos_y = HEIGHT / 2 - ballSize/2;
     dir_x = -1.0f;
     dir_y = 0.0f;
-    speed = 2;
+    speed = 4;
     curPlayer = 1;
     isGoal = false;
 }
@@ -67,7 +67,7 @@ void Ball::update()
         dir_y = 0;
     }
     //hit top wall
-    else if(pos_y > HEIGHT)
+    else if(pos_y > HEIGHT-5)
     {
         dir_y = -fabs(dir_y);
     }

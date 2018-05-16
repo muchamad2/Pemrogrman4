@@ -28,6 +28,12 @@ void Racket::update(){
         if(GetAsyncKeyState(VK_W)) position_y += speed;
         if(GetAsyncKeyState(VK_S)) position_y -= speed;
     }
+    if(position_y+height >= HEIGHT){
+        position_y = HEIGHT - height-5;
+    }
+    else if(position_y <= 0){
+        position_y = 5;
+    }
 }
 void Racket::setPlayer(int player){
     selectPlayer = player;

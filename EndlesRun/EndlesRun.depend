@@ -1,11 +1,26 @@
 # depslib dependency file v1.0
-1525601901 source:e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\main.cpp
+1526359325 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\factory.cpp
+	"Factory.h"
+
+1526358582 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\factory.h
+	<vector>
+	"Obstacle.h"
+
+1526347583 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\obstacle.h
+	"GameObject.h"
+
+1526353173 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\gameobject.h
+	"Object.h"
+	"Vector2D.h"
+	<string>
+	<iostream>
+
+1526310295 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\object.h
+	"LoaderParams.h"
 	<windows.h>
 	<GL/glut.h>
-	"OpenWindow.h"
-	"Racket.h"
-	"Ball.h"
-	"UIText.h"
+
+1526296365 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\loaderparams.h
 
 1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
@@ -222,81 +237,50 @@
 	<stddef.h>
 	<GL/gl.h>
 
-1525597799 e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\openwindow.h
-	"GameUpdate.h"
-	<vector>
-
-1525597800 e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\gameupdate.h
-	<windows.h>
-	<GL/glut.h>
-	<iostream>
+1526203038 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\vector2d.h
 	<cmath>
-	<cstring>
-	<sstream>
 
-1525597802 source:e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\openwindow.cpp
-	"OpenWindow.h"
+1526353197 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\gameobject.cpp
+	"GameObject.h"
 
-1525601888 source:e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\racket.cpp
-	"Racket.h"
+1526313664 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\handleinput.cpp
+	"HandleInput.h"
 
-1525601839 e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\racket.h
-	"GameUpdate.h"
+1526313764 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\handleinput.h
 
-1525599767 source:e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\ball.cpp
-	"Ball.h"
-
-1525599685 e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\ball.h
-	"GameUpdate.h"
-	"Racket.h"
-
-1525599729 source:e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\uitext.cpp
-	"UIText.h"
-
-1525599399 e:\academypens\kelas2\semester 4\bu.dea_prak. pemrograman4\prak.-pemrograman4\pong\uitext.h
-	"Ball.h"
-	"GameUpdate.h"
-
-1525917505 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\openwindow.cpp
-	"OpenWindow.h"
-
-1525917865 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\openwindow.h
-	"GameUpdate.h"
-	<vector>
-
-1525597800 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\gameupdate.h
+1526313834 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\main.cpp
 	<windows.h>
 	<GL/glut.h>
+	<stdlib.h>
 	<iostream>
-	<cmath>
-	<cstring>
-	<sstream>
+	"Game.h"
+	"HandleInput.h"
 
-1525918446 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\racket.cpp
-	"Racket.h"
-
-1525602683 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\racket.h
-	"GameUpdate.h"
-
-1525834377 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\uitext.cpp
-	"UIText.h"
-
-1525602940 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\uitext.h
-	"Ball.h"
-	"GameUpdate.h"
-
-1525602847 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\ball.h
-	"GameUpdate.h"
-	"Racket.h"
-
-1525917890 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\main.cpp
+1526362041 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\game.h
 	<windows.h>
 	<GL/glut.h>
-	"OpenWindow.h"
-	"Racket.h"
-	"Ball.h"
-	"UIText.h"
+	<vector>
+	<iostream>
+	"Player.h"
+	"Factory.h"
+	"Obstacle.h"
 
-1525833183 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\pong\ball.cpp
-	"Ball.h"
+1526353693 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\player.h
+	"HandleInput.h"
+	"GameObject.h"
+	"Vector2D.h"
+
+1526361843 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\obstacle.cpp
+	"Obstacle.h"
+
+1526360403 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\player.cpp
+	"Player.h"
+	"Game.h"
+
+1526311601 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\vector2d.cpp
+	"Vector2D.h"
+
+1526359750 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\game.cpp
+	"Game.h"
+	"HandleInput.h"
 

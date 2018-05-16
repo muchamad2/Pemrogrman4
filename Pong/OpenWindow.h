@@ -4,7 +4,6 @@
 
 #define Interval 1000/60
 #include <vector>
-
 class OpenWindow
 {
     //store all object that inherite gameupdate
@@ -29,5 +28,5 @@ public:
 protected:
     static OpenWindow *instance;
 };
-
+//static OpenWindow *newwindow;
 #endif // OPENWINDOW_H_INCLUDED
