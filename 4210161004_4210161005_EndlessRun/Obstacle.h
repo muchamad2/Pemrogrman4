@@ -6,7 +6,7 @@ class Obstacle : public GameObject
 {
 public:
     Obstacle(const LoaderParams* pParams);
-    ~Obstacle();
+    virtual ~Obstacle();
     void draw();
     void update();
     Vector2D Position(){return m_position;}

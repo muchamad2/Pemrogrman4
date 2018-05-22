@@ -45,6 +45,8 @@
 		<Unit filename="Game.h" />
 		<Unit filename="GameObject.cpp" />
 		<Unit filename="GameObject.h" />
+		<Unit filename="GameObjectStore.cpp" />
+		<Unit filename="GameObjectStore.h" />
 		<Unit filename="HandleInput.cpp" />
 		<Unit filename="HandleInput.h" />
 		<Unit filename="LoaderParams.h" />

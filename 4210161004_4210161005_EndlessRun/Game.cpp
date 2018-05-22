@@ -2,6 +2,7 @@
 #include "HandleInput.h"
 Game *Game::s_instance = 0;
 Game::Game() {}
+//fungsi untuk menampilkan menu ketika player bercolision dengan obstacle atau enemy
 void Game::windisplay(string menuTxt,void *font){
     int total = 0;
     char *txt = new char[menuTxt.length()+1];
@@ -18,18 +19,23 @@ void Game::windisplay(string menuTxt,void *font){
 }
 void Game::init()
 {
+    //inisialisasi object player dan ui score dalam game
     objects.push_back(new Player(new LoaderParams(10,0,20,40,"Player")));
     objects.push_back(new UserInterface(new LoaderParams(20,HEIGHT - 20,20,30,"UserInterface")));
+    //inisialisasi untuk main menu
     string menuTxt = "Press ENTER to Start, ESC to Quit";
     menu.push_back(new UserInterface(new LoaderParams(WIDTH/2-143,HEIGHT/2,20,20,"UserInterface"),menuTxt));
     menuTxt = "Tekan RIGHT_ARROW or LEFT_ARROW to Move and UP_ARROW to jump";
     menu.push_back(new UserInterface(new LoaderParams(WIDTH/2-247,HEIGHT/2-20,20,20,"UserInterface"),menuTxt,GLUT_BITMAP_9_BY_15));
     old_t = glutGet(GLUT_ELAPSED_TIME);
+    //inisialisasi untuk parameter enemy dan obstacle
     Factory::InitEnemy(720,51,40,40,"Enemy");
     Factory::InitObstacle(720,0,30,40,"Obstacle");
+    //inisialisasi untuk timer enemy dan obstacle
     timerLimit = 3;
     timerEnemy = 0;
     timerObstacle = 1;
+    //membuat state berada pada frame atau scene main menu
     state = GAME_MENU;
 }
 void Game::display()
@@ -72,14 +78,14 @@ void Game::render()
         }
     }
     else if(state == GAME_WIN){
-        for(int i=0;i<menu.size();i++){
-            menu[i]->draw();
-        }
         for(int i=0;i<objects.size();i++){
             objects[i]->draw();
         }
+        for(int i=0;i<menu.size();i++){
+            menu[i]->draw();
+        }
     }
-//    Factory::getObstacle(0)->draw();
+
 }
 int randomtimer(){
     int timerlimiter = rand()%10 + 1;
@@ -90,18 +96,22 @@ void Game::spawnEnemy()
     timerEnemy += deltaTime();
     if(timerEnemy>randomtimer())
     {
+        //implementasi flyweight pattern untuk memperoleh parameter enemy
         LoaderParams *params2 = Factory::getParams("Enemy");
-        Enemy *obj = new Enemy(params2);
-        objects.push_back(obj);
+        //implementasi factory pattern untuk penciptaan enemy
+        objects.push_back(Storage::Instance()->createObject(params2));
+
         timerEnemy = 0;
     }
 }
 void Game::spawnObstacle(){
     timerObstacle += deltaTime();
     if(timerObstacle > timerLimit){
+            //implementasi flyweight pattern untuk memperoleh parameter obstacle
         LoaderParams *params = Factory::getParams("Obstacle");
-        Obstacle *newObj = new Obstacle(params);
-        objects.push_back(newObj);
+        //implementasi factory pattern untuk penciptaan obstacle
+        objects.push_back(Storage::Instance()->createObject(params));
+
         timerObstacle = 0;
     }
 }
@@ -160,7 +170,7 @@ void Game::gameUpdate()
         else if(HandleInput::Instance()->keyStates[27])
             exit(0);
     }
-//    Factory::getObstacle(0)->update();
+
 }
 bool Game::checkCollision(Object* player,Object* other)
 {

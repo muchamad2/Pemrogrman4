@@ -310,3 +310,109 @@
 1526817154 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\endlesrun\userinterface.cpp
 	"UserInterface.h"
 
+1526818899 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\enemy.cpp
+	"Enemy.h"
+
+1526901083 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\enemy.h
+	"GameObject.h"
+
+1526805884 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\gameobject.h
+	"Object.h"
+	"Vector2D.h"
+	<string>
+	<iostream>
+
+1526805884 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\object.h
+	"LoaderParams.h"
+	<windows.h>
+	<GL/glut.h>
+	"Vector2D.h"
+	<string>
+
+1526805884 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\loaderparams.h
+	<string>
+
+1526203038 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\vector2d.h
+	<cmath>
+
+1526821159 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\factory.cpp
+	"Factory.h"
+
+1526821007 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\factory.h
+	<vector>
+	<ctime>
+	"LoaderParams.h"
+
+1526805884 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\gameobject.cpp
+	"GameObject.h"
+
+1526815017 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\handleinput.cpp
+	"HandleInput.h"
+
+1526820375 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\handleinput.h
+
+1526818626 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<iostream>
+	"Game.h"
+	"HandleInput.h"
+
+1526962169 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\game.h
+	<windows.h>
+	<GL/glut.h>
+	<vector>
+	<iostream>
+	<cstring>
+	"Player.h"
+	"Factory.h"
+	"Obstacle.h"
+	"LoaderParams.h"
+	"Enemy.h"
+	"UserInterface.h"
+	"HandleInput.h"
+	"GameObjectStore.h"
+
+1526805884 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\player.h
+	"HandleInput.h"
+	"GameObject.h"
+	"Vector2D.h"
+
+1526901114 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\obstacle.h
+	"GameObject.h"
+
+1526820250 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\userinterface.h
+	"Object.h"
+	"Vector2D.h"
+	"string"
+	<sstream>
+	"Game.h"
+
+1526964097 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\obstacle.cpp
+	"Obstacle.h"
+	"Game.h"
+
+1526814116 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\player.cpp
+	"Player.h"
+	"Game.h"
+
+1526817154 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\userinterface.cpp
+	"UserInterface.h"
+
+1526805884 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\vector2d.cpp
+	"Vector2D.h"
+
+1526963842 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\game.cpp
+	"Game.h"
+	"HandleInput.h"
+
+1526962512 e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\gameobjectstore.h
+	"GameObject.h"
+	"Enemy.h"
+	"Obstacle.h"
+	"LoaderParams.h"
+
+1526961854 source:e:\academypens\kelas2\semester 4\bu.dea_pemrogrman4\4210161004_4210161005_endlessrun\gameobjectstore.cpp
+	"GameObjectStore.h"
+

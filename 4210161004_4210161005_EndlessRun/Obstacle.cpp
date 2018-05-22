@@ -24,5 +24,5 @@ void Obstacle::draw()
 void Obstacle::update()
 {
     GameObject::update();
-    m_velocity.setX(-3);
+    m_velocity.setX(-4);
 }

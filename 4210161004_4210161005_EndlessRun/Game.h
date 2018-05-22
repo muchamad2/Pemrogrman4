@@ -13,6 +13,7 @@
 #include "Enemy.h"
 #include "UserInterface.h"
 #include "HandleInput.h"
+#include "GameObjectStore.h"
 #define HEIGHT 220
 #define WIDTH 720
 using namespace std;

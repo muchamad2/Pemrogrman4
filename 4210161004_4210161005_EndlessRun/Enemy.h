@@ -9,7 +9,7 @@ class Enemy : public GameObject
 public:
     Enemy(const LoaderParams *pParams);
     Enemy(const LoaderParams *pParams,int position);
-    ~Enemy();
+    virtual ~Enemy();
     void draw();
     void update();
     Vector2D Position()
